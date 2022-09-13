@@ -1,0 +1,9 @@
+h1{
+    color: red;
+}
+.likes_button{
+    border-radius: 5px;
+    background-color: white;
+    border-color: blue;
+}
+
