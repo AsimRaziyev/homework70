@@ -8,7 +8,6 @@
       "title": "╤ЄрЄ№ 5",
       "content": "╩юэЄхэЄ5",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -22,7 +21,6 @@
       "title": "╤ЄрЄ№ 6",
       "content": "╩юэЄхэЄ6",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -36,7 +34,6 @@
       "title": "╤ЄрЄ№ 7",
       "content": "╩юэЄхэЄ7",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -50,7 +47,6 @@
       "title": "Articl1",
       "content": "vsdvds",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -64,7 +60,6 @@
       "title": "Articl2",
       "content": "vdfvfs",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -78,7 +73,6 @@
       "title": "Articl3",
       "content": "cdscds",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -92,7 +86,6 @@
       "title": "ggggg",
       "content": "gggggg",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -106,7 +99,6 @@
       "title": "vdsvds",
       "content": "vdsvdsvds",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -120,7 +112,6 @@
       "title": "gergre",
       "content": "greger",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -134,7 +125,6 @@
       "title": "gergre",
       "content": "gregerger",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": []
    }
@@ -148,9 +138,12 @@
       "title": "test article",
       "content": "dfbdfbfd",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
-      "likes": []
+      "likes": [
+         1,
+         5,
+         6
+      ]
    }
 },
 {
@@ -162,9 +155,12 @@
       "title": "fefewfew",
       "content": "fwe",
       "author": 1,
-      "like_counts": 0,
       "tags": [],
-      "likes": []
+      "likes": [
+         1,
+         5,
+         6
+      ]
    }
 },
 {
@@ -176,133 +172,11 @@
       "title": "vsdvds",
       "content": "vds",
       "author": 1,
-      "like_counts": 0,
-      "tags": [],
-      "likes": []
-   }
-},
-{
-   "model": "webapp.article",
-   "pk": 44,
-   "fields": {
-      "created_at": "2022-08-09T13:46:29.358Z",
-      "updated_at": "2022-08-09T13:46:29.358Z",
-      "title": "cds",
-      "content": "cd",
-      "author": 1,
-      "like_counts": 0,
-      "tags": [
-         7
-      ],
-      "likes": []
-   }
-},
-{
-   "model": "webapp.article",
-   "pk": 45,
-   "fields": {
-      "created_at": "2022-08-09T13:49:02.476Z",
-      "updated_at": "2022-08-09T13:49:02.476Z",
-      "title": "cds",
-      "content": "cd",
-      "author": 1,
-      "like_counts": 0,
-      "tags": [
-         7
-      ],
-      "likes": []
-   }
-},
-{
-   "model": "webapp.article",
-   "pk": 46,
-   "fields": {
-      "created_at": "2022-08-09T13:52:53.829Z",
-      "updated_at": "2022-08-09T13:52:53.829Z",
-      "title": "bgfb",
-      "content": "gfgbgfb",
-      "author": 2,
-      "like_counts": 0,
-      "tags": [
-         7
-      ],
-      "likes": []
-   }
-},
-{
-   "model": "webapp.article",
-   "pk": 47,
-   "fields": {
-      "created_at": "2022-09-11T17:42:08.502Z",
-      "updated_at": "2022-09-11T17:42:08.502Z",
-      "title": "test12",
-      "content": "sss",
-      "author": 1,
-      "like_counts": 1,
-      "tags": [
-         7
-      ],
-      "likes": []
-   }
-},
-{
-   "model": "webapp.article",
-   "pk": 48,
-   "fields": {
-      "created_at": "2022-09-13T05:28:48.637Z",
-      "updated_at": "2022-09-13T05:28:48.637Z",
-      "title": "fdfdf",
-      "content": "fdf",
-      "author": 1,
-      "like_counts": 0,
       "tags": [],
       "likes": [
-         3
+         5,
+         6
       ]
-   }
-},
-{
-   "model": "webapp.comment",
-   "pk": 1,
-   "fields": {
-      "created_at": "2022-08-09T15:09:06.630Z",
-      "updated_at": "2022-08-09T15:09:06.630Z",
-      "text": "vrfdvfdvdfvdf",
-      "author": 1,
-      "article": 46
-   }
-},
-{
-   "model": "webapp.comment",
-   "pk": 2,
-   "fields": {
-      "created_at": "2022-09-11T17:41:21.964Z",
-      "updated_at": "2022-09-11T17:41:41.929Z",
-      "text": "wwwssss",
-      "author": 1,
-      "article": 45
-   }
-},
-{
-   "model": "webapp.comment",
-   "pk": 4,
-   "fields": {
-      "created_at": "2022-09-11T19:30:44.321Z",
-      "updated_at": "2022-09-11T19:30:44.321Z",
-      "text": "ssasas",
-      "author": 1,
-      "article": 47
-   }
-},
-{
-   "model": "webapp.comment",
-   "pk": 5,
-   "fields": {
-      "created_at": "2022-09-11T19:37:21.261Z",
-      "updated_at": "2022-09-11T19:37:21.261Z",
-      "text": "sasas",
-      "author": 1,
-      "article": 47
    }
 },
 {
