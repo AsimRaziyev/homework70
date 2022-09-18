@@ -6,14 +6,13 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">{{ article.title }}</h5>
-                    {% if request.user.is_authenticated %}
-                            <div class="likes">
-                                <button class="likes_button" onclick="like({{ article.pk }})">&#128077;{{ article.like_counts }}</button>
-                            </div>
-                        {% endif %}
-                    <br>
+                    <span id="article-{{ article.id }}">💕 {{ article.likes.count }}</span>
                 </div>
                 <a href="{{ article.get_absolute_url }}" class="card-link btn btn-primary">Подробнее</a>
+                {% if request.user.is_authenticated %}
+                    <a data-article-id="article-{{ article.id }}" class="likes" href="{% url "api_v1:likes" article.pk %}">
+                        {% if request.user in article.likes.all %}❤{% else %}💔{% endif %}</a>
+                {% endif %}
             </div>
         </div>
         {% empty %}

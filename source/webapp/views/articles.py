@@ -8,50 +8,9 @@ from django.urls import reverse_lazy
 
 # Create your views here.
 from django.utils.http import urlencode
-from django.views import View
-
 from webapp.forms import ArticleForm, SearchForm, ArticleDeleteForm, UserArticleForm
 from webapp.models import Article
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-
-
-class AddLike(LoginRequiredMixin, View):
-
-    def get(self, request, pk, *args, **kwargs):
-        article = Article.objects.get(pk=pk)
-        print(article)
-        if article.likes.filter(id=request.user.id).exists():
-            article.likes.remove(request.user)
-            article.like_count -= 1
-            result = article.like_count
-            print(result)
-            article.save()
-        else:
-            article.likes.add(request.user)
-            article.like_count += 1
-            result = article.like_count
-            article.save()
-
-        return JsonResponse({'result': result})
-
-
-# def post(self, request, pk, *args, **kwargs):
-#     article = Article.objects.get(pk=pk)
-#     print(article)
-#     is_like = False
-#     for like in article.likes.all():
-#         if like == request.user:
-#             is_like = True
-#             break
-#     if not is_like:
-#         article.likes.add(request.user)
-#         print(article)
-#     if is_like:
-#         article.likes.remove(request.user)
-#     return HttpResponseRedirect(reverse('article', args=[str(pk)]))
-
-# context = {"article": article}
-# return render(request, 'webapp:index.html', context)
 
 
 class IndexView(ListView):
@@ -144,3 +103,4 @@ class DeleteArticle(PermissionRequiredMixin, DeleteView):
             return self.delete(request, *args, **kwargs)
         else:
             return self.get(request, *args, **kwargs)
+

@@ -48,20 +48,10 @@
         test
     {% endblock %}
 </div>
-{#<form method="post" action="">#}
-{#              {% csrf_token %}#}
-{#              <div style="margin-top: 10px; width: 30px; height: 30px; margin-left: 950px;">#}
-{#                  <input type="hidden" name="text" value="{{ request.path }}">#}
-{#                  <button style="background: transparent; border: none; box-shadow: none;" type="submit">#}
-{#                      <img class="img_like" src="{% static 'images/like.png' %}">#}
-{#                      <span>{{ artikle.likes.all.count }}</span>#}
-{#                  </button>#}
-{#              </div>#}
-{##}
-{#          </form>#}
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
+<script src="{% static "js/likes.js" %}"></script>
 </html>
