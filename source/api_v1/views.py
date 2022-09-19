@@ -1,7 +1,5 @@
 import json
 from django.http import JsonResponse
-from django.shortcuts import render
-from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 
